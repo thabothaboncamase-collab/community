@@ -1,11 +1,7 @@
-name: Auto-Label Discussions for Actions Category
-
-on:
-  discussion:
-    types: [created, category_changed]
+Nca me: description: 
 
 jobs:
-  auto-label-keywords:
+  auo-label-keywords:
     if: ${{ contains(github.event.discussion.category.name, 'Actions') }}
     runs-on: ubuntu-latest
     env:
